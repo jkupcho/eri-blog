@@ -7,6 +7,7 @@ import { config } from 'config'
 import { rhythm } from '../utils/typography'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 import '../css/site.scss'
 
@@ -30,6 +31,7 @@ export default class Template extends React.Component {
         <div>
           {this.props.children}
         </div>
+        <Footer></Footer>
       </div>
     )
   }

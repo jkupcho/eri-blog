@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router';
-import Header from '../images/header.png'
+import React from 'react'
+import { Link } from 'react-router'
+import Header from '../images/header.jpg'
 import '../css/nav.scss'
 
 export default () => {

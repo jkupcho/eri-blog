@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bulma": "^0.4.2",
+    "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "gatsby": "^0.12.45",
     "object-assign": "^4.1.1",
