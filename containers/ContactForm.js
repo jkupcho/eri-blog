@@ -35,7 +35,7 @@ export default class ContactForm extends Component {
 
     const formData = new FormData()
 
-    formData.append("form-data", "contact")
+    formData.append("form-name", "contact")
     formData.append("name", this.state.form.name)
     formData.append("email", this.state.form.email)
     formData.append("subject", this.state.form.subject)
