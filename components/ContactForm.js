@@ -3,7 +3,7 @@ import Icon from './Icon'
 
 export default () => {
   return (
-    <form name="contact" className="field is-horizontal" netlify>
+    <form name="contact" className="field is-horizontal" netlify action="contact">
       <div className="field-label is-normal">
         <label className="label">From</label>
       </div>
