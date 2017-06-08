@@ -21,6 +21,31 @@ export default () => {
           </p>
         </div>
       </div>
+      <div className="field is-horizontal">
+        <div className="field-label is-normal">
+          <label className="label">Question</label>
+        </div>
+        <div className="field-body">
+          <div className="field">
+            <div className="control">
+              <textarea className="textarea" placeholder="Explain how we can help you"></textarea>
+            </div>
+          </div>
+        </div>
+        <div className`="field is-horizontal">
+          <div className`="field-label">
+          </div>
+          <div className`="field-body">
+            <div className`="field">
+              <div className`="control">
+                <button className`="button is-primary">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
   );
 }
