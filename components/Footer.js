@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from './Title'
-import Icon from '../components/Icon'
-import ContactForm from '../components/ContactForm'
+import Icon from './Icon'
+import ContactForm from '../containers/ContactForm'
 
 export default () => {
   return (
