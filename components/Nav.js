@@ -14,16 +14,8 @@ export default () => {
         </div>
         <div className="nav-right nav-menu">
           <Link to="/" className="nav-item is-tab">Home</Link>
-          <Link to="/services" className="nav-item is-tab">Services</Link>
-          <Link to="/gallery" className="nav-item is-tab">Gallery</Link>
-          <Link to="/team" className="nav-item is-tab">Our Team</Link>
-          <Link to="/contact" className="nav-item is-tab">Contact</Link>
         </div>
         <span className="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
           <span></span>
         </span>
       </div>
