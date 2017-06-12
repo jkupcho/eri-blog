@@ -45,11 +45,6 @@ export default class Index extends React.Component {
               </div>
             </div>
           </div>
-          <div className="columns section-divider">
-            <div className="column is-half is-offset-one-quarter">
-              <Title size={1} className="has-text-centered">Recent Remodels</Title>
-            </div>
-          </div>
         </div>
     )
   }
