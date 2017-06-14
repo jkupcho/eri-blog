@@ -3,20 +3,65 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import { config } from 'config'
+import ImageGallery from 'react-image-gallery'
 
 import Title from '../components/Title'
 import Icon from '../components/Icon'
 import Banner from '../images/banner.jpg'
+import Slider from 'react-slick'
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import '../css/index.css'
 import 'font-awesome/css/font-awesome.css'
 
+import { fetchAlbum } from '../lib/flickr-api'
+
 export default class Index extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photos: []
+    }
+  }
+
+  componentDidMount() {
+    fetchAlbum('72157680931456360')
+      .then((photos) => {
+        this.setState({
+          photos
+        });
+      });
+  }
+
   render() {
+    let photos = (<div></div>)
+
+    if (this.state.photos.length) {
+      const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        centerMode: true
+      };
+      const photoImages = this.state.photos.map((photo) => <div key={photo.key} className="gallery--block"><img className="gallery--image" src={photo.src} /></div>);
+      photos = (<Slider {...settings}>{photoImages}</Slider>)
+    }
     return (
         <div>
           <figure className="image">
             <img src={Banner} />
           </figure>
+          <div className="column" style={{backgroundColor: '#333'}}>
+            <div className="is-12 column is-centered gallery--block">
+              {photos}
+            </div>
+          </div>
           <div className="columns section-divider">
             <div className="column is-half is-offset-one-quarter">
               <h1 className="title is-1 has-text-centered">Our Services</h1>
