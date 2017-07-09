@@ -57,8 +57,9 @@ export default class Index extends React.Component {
           <figure className="image">
             <img src={Banner} />
           </figure>
-          <div className="column" style={{backgroundColor: '#333'}}>
-            <div className="is-12 column is-centered gallery--block">
+          <div className="column">
+            <h1 className="title is-1 has-text-centered">Gallery</h1>
+            <div className="is-12 column is-centered gallery--block" style={{backgroundColor: '#333'}}>
               {photos}
             </div>
           </div>
