@@ -14,7 +14,8 @@
     "react-typography": "^0.15.0",
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0",
-    "typography-plugin-code": "^0.15.9"
+    "typography-plugin-code": "^0.15.9",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
