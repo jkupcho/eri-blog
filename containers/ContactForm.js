@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Icon from '../components/Icon'
 
-import 'whatwg-fetch'
+import fetch from  'isomorphic-fetch'
 
 const defaultState = {
   form: {
