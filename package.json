@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "bulma": "^0.4.2",
+    "bulma": "^0.4.3",
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "gatsby": "^0.12.45",

@@ -9,6 +9,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
 };
 
 export default class Gallery extends Component {
@@ -28,7 +29,7 @@ export default class Gallery extends Component {
       .then((photos) => {
         this.setState({
           loading: false,
-          gallery: photos.map((photo) => <div key={photo.key}><img src={photo.src} /></div>)
+          gallery: photos.map((photo) => <div key={photo.key}><img style={{ margin: '0 auto' }}src={photo.src} /></div>)
         });
       });
   }

@@ -1,13 +1,17 @@
-.nav {
-  height: 72px !important;
+.navbar {
   height: 4.5rem !important;
 }
 
-.nav-img {
-  overflow: hidden;
+.navbar.shadow {
+  box-shadow: 0 4px 3px -3px #dedede;
 }
 
-.nav-img > a > img {
-  margin-bottom: 0;
-  max-height: 3.5rem;
+.navbar-img {
+  position: relative;
+  top: 22.5px;
+  max-height: 3.5rem !important;
+}
+
+.navbar-brand > a:hover {
+  background-color: white !important;
 }

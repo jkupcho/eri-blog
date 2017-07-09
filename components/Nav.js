@@ -5,19 +5,28 @@ import '../css/nav.scss'
 
 export default () => {
   return (
-    <nav className="nav has-shadow">
-      <div className="container">
-        <div className="nav-left nav-img">
-          <Link to="/" className="nav-item">
-            <img src={Header} alt="Enhanced Interiors Remodeling" />
-          </Link>
+    <nav className="navbar shadow">
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-item">
+          <img className="navbar-img" src={Header} alt="Enhanced Interiors Remodeling" />
+        </Link>
+      </div>
+      <div className="navbar-menu">
+        <div className="navbar-start">
+          <Link to="/" className="navbar-item">Home</Link>
+          <div className="navbar-item has-dropdown is-hoverable">
+            <a className="navbar-link">
+              Work
+            </a>
+            <div className="navbar-dropdown">
+              <Link className="navbar-item" to="/work/mud-rooms/">Mud Rooms</Link>
+            </div>
+          </div>
         </div>
-        <div className="nav-right nav-menu">
-          <Link to="/" className="nav-item is-tab">Home</Link>
-        </div>
-        <span className="nav-toggle">
-          <span></span>
-        </span>
+      </div>
+      <div className="navbar-burger">
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
