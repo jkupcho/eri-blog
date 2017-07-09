@@ -9,7 +9,6 @@ import Icon from '../components/Icon'
 import Banner from '../images/banner.jpg'
 import AboutUsImage from '../images/dusolds-540x460.jpg'
 import '../css/index.css'
-import 'font-awesome/css/font-awesome.css'
 
 export default class Index extends React.Component {
   render() {

@@ -9,6 +9,7 @@ import { rhythm } from '../utils/typography'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
+import 'font-awesome/css/font-awesome.css'
 import '../css/site.scss'
 
 export default class Template extends React.Component {
