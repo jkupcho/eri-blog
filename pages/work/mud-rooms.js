@@ -8,7 +8,7 @@ export default () => {
       <h1 className="title" style={{ margin: '25px 0' }}>Work - Mud Rooms</h1>
       <div className="columns">
         <div className="column is-one-third" style={{ margin: '25px 0' }}>
-          <Gallery albumId={72157683326007650} />
+          <Gallery albumId={'72157683326007650'} />
         </div>
         <div className="column">
           <div className="content is-medium"  style={{ margin: '25px 0' }}>

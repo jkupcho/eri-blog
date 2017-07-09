@@ -1,0 +1,15 @@
+.slick-slide {
+  text-align: center;
+}
+
+.slick-slide::before {
+  content: '';
+  display: inner-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.slick-slide img {
+  vertical-align: middle;
+  display: inline-block;
+}
