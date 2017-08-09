@@ -31,45 +31,18 @@ export default class ContactForm extends Component {
     })
   }
 
-  handleSubmit = (event) => {
-    event.preventDefault()
-
-    const formData = new FormData()
-
-    formData.append("form-name", "contact")
-    formData.append("name", this.state.form.name)
-    formData.append("email", this.state.form.email)
-    formData.append("subject", this.state.form.subject)
-    formData.append("question", this.state.form.question)
-
-    fetch('/contact', {
-      method: 'POST',
-      body: formData
-    }).then((res) => {
-      if (!res.ok) { throw Error(res); }
-      return res;
-    }).then((res) => {
-      this.setState({
-        form: { ...defaultState.form },
-        formSent: true
-      });
-
-      setTimeout(() => {
-        this.setState({
-          formSent: false
-        });
-      }, 5000);
-
-    }).catch((err) => {
-      // Swallow exception.
-    });
-  }
-
   render() {
     return (
       <div>
-        { this.state.formSent ? <SuccessMessage /> : '' }
-        <form ref="contactForm" name="contact" action="contact" data-netlify>
+        <form 
+          name="contact" 
+          method="post"
+          action="/thanks/" 
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+            <input type="hidden" name="form-name" name="contact" />
+
             <div className="field is-horizontal">
               <div className="field-label is-normal">
                 <label className="label">From</label>
@@ -129,8 +102,6 @@ export default class ContactForm extends Component {
                 </div>
               </div>
             </div>
-
-            <input type="hidden" name="contact" />
         </form>
       </div>
     );
