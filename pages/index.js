@@ -14,9 +14,6 @@ export default class Index extends React.Component {
   render() {
     return (
         <div>
-          <figure className="image">
-            <img src={Banner} />
-          </figure>
           <div className="columns section-divider" style={{marginBottom: '25px'}}>
             <div className="column is-half is-offset-one-quarter">
               <h1 className="title is-1 has-text-centered">Our Services</h1>

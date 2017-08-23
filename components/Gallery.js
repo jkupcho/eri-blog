@@ -11,7 +11,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: true
 };
 
 export default class Gallery extends Component {
@@ -29,16 +29,21 @@ export default class Gallery extends Component {
   componentWillMount () {
     fetchAlbum(this.albumId)
       .then((photos) => {
+        console.log(photos);
         this.setState({
           loading: false,
-          gallery: photos.map((photo) => <div key={photo.key}><img src={photo.src} /></div>)
+          gallery: photos.map((photo) => <div key={photo.id}><img src={photo.photoSrc} /></div>)
         });
       });
   }
 
   render() {
     return (
-      <div>{this.state.loading ? <span>Loading...</span> : <Slider {...settings}>{this.state.gallery}</Slider>}</div>
+      <div className="gallery-container">
+        <div className="gallery-wrapper">
+          {this.state.loading ? <span>Loading...</span> : <Slider {...settings}>{this.state.gallery}</Slider>}
+        </div>
+      </div>
     );
   }
 
