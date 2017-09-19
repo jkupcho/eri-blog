@@ -1,3 +1,12 @@
+body {
+  background-color: rgba(93, 43, 6, 0.41);
+}
+
+.container {
+  margin-top: 1px;
+  border: 1px solid #aaa;
+}
+
 .parallax {
   margin: 0 !important;
 }
