@@ -1,6 +1,6 @@
 .gallery-container {
   padding-top: 25px;
-  padding-bottom: -15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;
 
   background-color: #f5f5f5;
@@ -24,7 +24,7 @@ button.slick-arrow {
 
 ul.slick-dots {
   position: relative;
-  top: -40px;
+  top: 0px;
 }
 
 .img-container {

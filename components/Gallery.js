@@ -31,7 +31,7 @@ export default class Gallery extends Component {
       .then((photos) => {
         this.setState({
           loading: false,
-          gallery: photos.map((photo) => <div key={photo.id}><div className="img-container"><div className="img-wrapper"><img src={photo.photoSrc} /></div></div></div>)
+          gallery: photos.map((photo) => <div key={photo.id}><div className="img-container"><figure className="image is-4by3"><img src={photo.photoSrc} /></figure></div></div>)
         });
       });
   }
