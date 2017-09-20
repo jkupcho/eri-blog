@@ -23,3 +23,8 @@ footer.footer > .container {
   border: none;
 }
 
+.thumb-gallery figure.image {
+  margin: 0 auto;
+  background-color: none;
+} 
+
