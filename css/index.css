@@ -2,6 +2,10 @@ body {
   background-color: rgba(93, 43, 6, 0.41);
 }
 
+.thumb > .image.is-4by3 {
+  padding-top: 0;
+}
+
 .container {
   margin-top: 1px;
   border: 1px solid #aaa;

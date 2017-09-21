@@ -36,7 +36,10 @@ export default class Index extends React.Component {
           <div className="column is-offset-one-quarter is-half">
             <h1 className="title is-1 has-text-centered">About Us</h1>
               <div style={{margin: '20px 20px'}}>
-                <img className="is-centered" src={AboutUsImage} width={350} height={350} style={{display: 'block', margin: 'auto'}} />
+
+                <figure className="image is-4by3">
+                  <img className="is-centered" src={AboutUsImage} style={{display: 'block', margin: 'auto'}} />
+                </figure>
               </div>
               <div className="content">
                 <p>
