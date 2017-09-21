@@ -1,0 +1,14 @@
+[
+  {
+    "name": "default",
+    "albumId": "72157682345181862",
+    "description": ""
+  },
+  {
+    "name": "Exterior",
+    "albumId": "72157682345181862",
+    "thumb": "../../images/exterior_thumb.jpg",
+    "description": "Testing one two three"
+  }
+]
+
