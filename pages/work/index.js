@@ -39,10 +39,7 @@ export default class Work extends React.Component {
   render() {
     return (
       <div className="container">
-        <section className="section">
-          <Gallery albumId={this.state.galleryShown.albumId} />
-          <hr />
-        </section>
+        <Gallery albumId={this.state.galleryShown.albumId} />
         <section className="section">
           <Thumbs onClick={this.findDetail.bind(this)} />
         </section>
