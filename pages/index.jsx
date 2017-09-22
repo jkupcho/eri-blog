@@ -27,10 +27,10 @@ export default class Index extends React.Component {
       
         <section className="section">
           <div className="thumb-gallery columns is-multiline">
-            <Thumb label='Exterior' img={ExteriorThumb}></Thumb>
-            <Thumb label='Porches' img={PorchesThumb}></Thumb>
-            <Thumb label='Kitchens' img={KitchensThumb}></Thumb>
-            <Thumb label='Living Rooms' img={LivingRoomThumb}></Thumb>
+            <Link to={{ pathname: '/work/', query: { gallery: 'exterior' } }}><Thumb label='Exterior' img={ExteriorThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'porches' } }}><Thumb label='Porches' img={PorchesThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'kitchens' } }}><Thumb label='Kitchens' img={KitchensThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Living Rooms' img={LivingRoomThumb}></Thumb></Link>
           </div>
         </section>
 

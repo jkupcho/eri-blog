@@ -11,7 +11,7 @@ export default class Work extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: 'default'
+      selected: props.location.query === undefined ? 'default' : props.location.query.gallery
     }
   }
 
