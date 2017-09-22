@@ -15,20 +15,31 @@ export default class Work extends React.Component {
     }
   }
 
-  render() {
-    let galleryShown = detail.filter(d => d.name === this.state.selected)[0]
+  componentWillMount() {
+    const gallery = this.props.location.query === undefined ? 'default' : this.props.location.query.gallery
+
+    this.findDetail(gallery)
+  }
+
+  findDetail(gallery) {
+    let galleryShown = detail.filter(d => d.name === gallery)[0]
 
     if (galleryShown === undefined) { galleryShown = detail[0] }
 
+    this.setState({
+      galleryShown
+    })
+  }
+
+  render() {
     return (
       <div className="container">
         <section className="section">
-          <span className="testing">{galleryShown.description}</span>
-          <Gallery albumId={galleryShown.albumId} />
+          <Gallery albumId={this.state.galleryShown.albumId} />
           <hr />
         </section>
         <section className="section">
-          <Thumbs />
+          <Thumbs onClick={this.findDetail.bind(this)} />
         </section>
         <section></section>
       </div>
@@ -37,10 +48,16 @@ export default class Work extends React.Component {
 
 }
 
-const Thumbs = () => { 
+const Thumbs = ({onClick}) => { 
+  const thumbClicked = (gallery) => {
+    onClick(gallery)
+  }
+
   const thumb = (detail) => {
     switch (detail.name) {
-      case 'Exterior':
+      case 'exterior':
+        return ExteriorThumb
+      case 'woodwork':
         return ExteriorThumb
       default:
         return ''
@@ -52,7 +69,7 @@ const Thumbs = () => {
       {
         detail.map((d, index) => {
           if (d.name !== 'default') {
-            return (<Thumb key={index} label={d.name} img={thumb(d)} />)
+            return (<div key={index} onClick={thumbClicked.bind(this, d.name)}><Thumb label={d.name} img={thumb(d)} /></div>)
           }
           return ''
         })

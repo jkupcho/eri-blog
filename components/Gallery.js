@@ -18,16 +18,26 @@ export default class Gallery extends Component {
 
   constructor(props) {
     super(props);
-    this.albumId = props.albumId;
 
     this.state = {
-      loading: true,
       gallery: []
     }
   }
 
-  componentWillMount () {
-    fetchAlbum(this.albumId)
+  componentWillMount() {
+    this.retrieveAlbum(this.props.albumId)
+  }
+
+  componentWillReceiveProps({albumId}) {
+    this.retrieveAlbum(albumId)
+  }
+
+  retrieveAlbum(albumId){
+    this.setState({
+      loading: true
+    })
+
+    fetchAlbum(albumId)
       .then((photos) => {
         this.setState({
           loading: false,
@@ -35,7 +45,6 @@ export default class Gallery extends Component {
         });
       });
   }
-
   render() {
     return (
       <div className="gallery-container">

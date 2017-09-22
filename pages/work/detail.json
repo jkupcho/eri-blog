@@ -5,10 +5,22 @@
     "description": ""
   },
   {
-    "name": "Exterior",
+    "name": "exterior",
+    "albumId": "72157682437069284",
+    "thumb": "../../images/exterior_thumb.jpg",
+    "description": ""
+  },
+  {
+    "name": "woodwork",
+    "albumId": "72157683326210760",
+    "thumb": "../../images/exterior_thumb.jpg",
+    "description": ""
+  },
+  {
+    "name": "",
     "albumId": "72157682345181862",
     "thumb": "../../images/exterior_thumb.jpg",
-    "description": "Testing one two three"
+    "description": ""
   }
 ]
 
