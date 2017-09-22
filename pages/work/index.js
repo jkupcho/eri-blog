@@ -25,9 +25,11 @@ export default class Work extends React.Component {
   }
 
   findDetail(gallery) {
-    let galleryShown = detail.filter(d => d.name === gallery.replace(/\s/g, ''))[0]
+    let galleryShown = detail[0]
 
-    if (galleryShown === undefined) { galleryShown = detail[0] }
+    if (gallery !== undefined) {
+      galleryShown = detail.filter(d => d.name === gallery.replace(/\s/g, ''))[0]
+    }
 
     this.setState({
       galleryShown
