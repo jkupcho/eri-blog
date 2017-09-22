@@ -49,7 +49,7 @@ export default class Gallery extends Component {
     return (
       <div className="gallery-container">
         <div className="gallery-wrapper">
-          {this.state.loading ? <span>Loading...</span> : <Slider {...settings}>{this.state.gallery}</Slider>}
+          {this.state.loading ? <div style={{ width: '100%', height: '100%' }} >Loading...</div> : <Slider {...settings}>{this.state.gallery}</Slider>}
         </div>
       </div>
     );

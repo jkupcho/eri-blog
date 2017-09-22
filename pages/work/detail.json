@@ -1,26 +1,25 @@
 [
   {
     "name": "default",
-    "albumId": "72157682345181862",
-    "description": ""
+    "albumId": "72157682345181862"
   },
   {
     "name": "exterior",
-    "albumId": "72157682437069284",
-    "thumb": "../../images/exterior_thumb.jpg",
-    "description": ""
+    "albumId": "72157682437069284"
   },
   {
-    "name": "woodwork",
-    "albumId": "72157683326210760",
-    "thumb": "../../images/exterior_thumb.jpg",
-    "description": ""
+    "name": "porches",
+    "albumId": "72157682436627004"
   },
   {
-    "name": "",
-    "albumId": "72157682345181862",
-    "thumb": "../../images/exterior_thumb.jpg",
-    "description": ""
+    "name": "kitchens",
+    "albumId": "72157682318556182"
+  },
+  {
+    "name": "livingrooms",
+    "label": "living rooms",
+    "albumId": "72157682321554212"
   }
+
 ]
 

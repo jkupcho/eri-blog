@@ -3,6 +3,9 @@ import Gallery from '../../components/Gallery'
 import Thumb from '../../components/Thumb'
 
 import ExteriorThumb from '../../images/exterior_thumb.jpg'
+import PorchesThumb from '../../images/porches_thumb.jpg'
+import KitchensThumb from '../../images/kitchens_thumb.jpg'
+import LivingRoomThumb from '../../images/living_room_thumb.jpg'
 
 import detail from './detail.json'
 
@@ -22,7 +25,7 @@ export default class Work extends React.Component {
   }
 
   findDetail(gallery) {
-    let galleryShown = detail.filter(d => d.name === gallery)[0]
+    let galleryShown = detail.filter(d => d.name === gallery.replace(/\s/g, ''))[0]
 
     if (galleryShown === undefined) { galleryShown = detail[0] }
 
@@ -57,8 +60,12 @@ const Thumbs = ({onClick}) => {
     switch (detail.name) {
       case 'exterior':
         return ExteriorThumb
-      case 'woodwork':
-        return ExteriorThumb
+      case 'porches':
+        return PorchesThumb
+      case 'kitchens':
+        return KitchensThumb
+      case 'livingrooms':
+        return LivingRoomThumb
       default:
         return ''
     }
@@ -69,7 +76,7 @@ const Thumbs = ({onClick}) => {
       {
         detail.map((d, index) => {
           if (d.name !== 'default') {
-            return (<div key={index} onClick={thumbClicked.bind(this, d.name)}><Thumb label={d.name} img={thumb(d)} /></div>)
+            return (<div key={index} onClick={thumbClicked.bind(this, d.name)}><Thumb label={d.label !== undefined ? d.label : d.name} img={thumb(d)} /></div>)
           }
           return ''
         })
