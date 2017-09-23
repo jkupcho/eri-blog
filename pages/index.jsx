@@ -31,6 +31,12 @@ export default class Index extends React.Component {
             <Link to={{ pathname: '/work/', query: { gallery: 'porches' } }}><Thumb label='Porches' img={PorchesThumb}></Thumb></Link>
             <Link to={{ pathname: '/work/', query: { gallery: 'kitchens' } }}><Thumb label='Kitchens' img={KitchensThumb}></Thumb></Link>
             <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Living Rooms' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
           </div>
         </section>
 

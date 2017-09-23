@@ -41,6 +41,17 @@ export default class Work extends React.Component {
       <div className="container">
         <Gallery albumId={this.state.galleryShown.albumId} />
         <section className="section">
+          <div className="content">
+            <h2>{this.state.galleryShown.label}</h2>
+            <p>
+              Ipsum molestias maxime dolores molestiae necessitatibus magnam impedit. Dolorem vel recusandae ea id cupiditate expedita, earum? Lorem maiores enim ad eveniet suscipit? Maiores expedita quaerat aliquam labore necessitatibus id, numquam
+            </p>
+            <p>
+            Sit quod accusamus rerum cumque quidem quibusdam? Molestias odio veritatis autem consectetur esse? Doloremque aut elit adipisci labore illo Eaque totam voluptatibus itaque quis mollitia. Dolore esse voluptatem maiores veniam
+            </p>
+          </div>
+        </section>
+        <section className="section">
           <Thumbs onClick={this.findDetail.bind(this)} />
         </section>
         <section></section>

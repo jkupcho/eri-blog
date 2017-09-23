@@ -1,11 +1,15 @@
+.thumb-gallery {
+  padding-left: 30px;
+}
+
 .thumb.column:hover {
   cursor: pointer;
 }
 
 .thumb > figure {
   position: relative;
-  width: 304px;
-  height: 228px;
+  width: 228px;
+  height: 171px;
 }
 
 .add-shadow {

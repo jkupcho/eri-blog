@@ -1,23 +1,22 @@
 [
   {
-    "name": "default",
-    "albumId": "72157682345181862"
-  },
-  {
     "name": "exterior",
+    "label": "Exterior Renovation",
     "albumId": "72157682437069284"
   },
   {
     "name": "porches",
+    "label": "Porches",
     "albumId": "72157682436627004"
   },
   {
     "name": "kitchens",
+    "label": "Kitchens",
     "albumId": "72157682318556182"
   },
   {
     "name": "livingrooms",
-    "label": "living rooms",
+    "label": "Living Rooms",
     "albumId": "72157682321554212"
   }
 
