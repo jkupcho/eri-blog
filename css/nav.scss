@@ -2,14 +2,46 @@
   height: 4.5rem !important;
 }
 
+.navbar-burger {
+  @media(max-width: 1007px)  {
+    top: 10px;
+  }
+}
+
+.navbar-menu {
+
+  &.is-active {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    top: -53px;
+  }
+}
+
 .navbar.shadow {
   box-shadow: 0 4px 3px -3px #dedede;
 }
+
 
 .navbar-img {
   position: relative;
   top: 15.5px;
   max-height: 5.5rem !important;
+
+  @media (max-width: 375px) {
+    max-height: 3.5rem !important;
+    top: 4.5px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: 4.5rem !important;
+    top: -4px;
+  }
+
+  @media(max-width: 1007px)  {
+    max-height: 4.5rem !important;
+    top: -7px;
+  }
 }
 
 .navbar-brand > a:hover {
