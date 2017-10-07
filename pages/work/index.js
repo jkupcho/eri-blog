@@ -9,7 +9,7 @@ import LivingRoomThumb from '../../images/living_room_thumb.jpg'
 
 import detail from './detail.json'
 
-import Scroll, { animateScroll } from 'react-scroll' 
+import Scroll, { Link, Element, animateScroll } from 'react-scroll' 
 
 export default class Work extends React.Component {
 
@@ -17,9 +17,6 @@ export default class Work extends React.Component {
     super(props);
     this.state = {
       selected: props.location.query === undefined ? 'default' : props.location.query.gallery
-    }
-    this.options = {
-      offset: 90
     }
   }
 
@@ -36,7 +33,6 @@ export default class Work extends React.Component {
       galleryShown = detail.filter(d => d.name === gallery.replace(/\s/g, ''))[0]
     }
 
-    animateScroll.scrollToTop(this.options);
 
     this.setState({
       galleryShown
@@ -46,7 +42,9 @@ export default class Work extends React.Component {
   render() {
     return (
       <div className="container">
-        <Gallery albumId={this.state.galleryShown.albumId} />
+        <Element name="gallery">
+          <Gallery name="gallery" albumId={this.state.galleryShown.albumId} />
+        </Element>
         <section className="section">
           <div className="content">
             <h2>{this.state.galleryShown.label}</h2>
@@ -69,8 +67,10 @@ export default class Work extends React.Component {
 }
 
 const Thumbs = ({onClick}) => { 
+
   const thumbClicked = (gallery) => {
     onClick(gallery)
+
   }
 
   const thumb = (detail) => {
@@ -93,7 +93,7 @@ const Thumbs = ({onClick}) => {
       {
         detail.map((d, index) => {
           if (d.name !== 'default') {
-            return (<div key={index} onClick={thumbClicked.bind(this, d.name)}><Thumb label={d.label !== undefined ? d.label : d.name} img={thumb(d)} /></div>)
+            return (<Link to={'gallery'} smooth={true} key={index} onClick={thumbClicked.bind(this, d.name)}><Thumb label={d.label !== undefined ? d.label : d.name} img={thumb(d)} /></Link>)
           }
           return ''
         })
