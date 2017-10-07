@@ -9,12 +9,17 @@ import LivingRoomThumb from '../../images/living_room_thumb.jpg'
 
 import detail from './detail.json'
 
+import Scroll, { animateScroll } from 'react-scroll' 
+
 export default class Work extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       selected: props.location.query === undefined ? 'default' : props.location.query.gallery
+    }
+    this.options = {
+      offset: 90
     }
   }
 
@@ -30,6 +35,8 @@ export default class Work extends React.Component {
     if (gallery !== undefined) {
       galleryShown = detail.filter(d => d.name === gallery.replace(/\s/g, ''))[0]
     }
+
+    animateScroll.scrollToTop(this.options);
 
     this.setState({
       galleryShown
