@@ -29,6 +29,7 @@
 
 .navbar-brand > a.navbar-item {
   @media (max-width: 375px) {
+  	position: relative;
     width: 80%;
     top: 14px;
   }
