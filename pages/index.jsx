@@ -5,9 +5,14 @@ import Helmet from 'react-helmet'
 import { config } from 'config'
 
 import ExteriorThumb from '../images/exterior_thumb.jpg'
+import GarageThumb from '../images/garage_thumb.jpg'
+import WoodworkThumb from '../images/woodwork_thumb.jpg'
+import MudroomThumb from '../images/mudroom_thumb.jpg'
 import PorchesThumb from '../images/porches_thumb.jpg'
 import KitchensThumb from '../images/kitchens_thumb.jpg'
-import LivingRoomThumb from '../images/living_room_thumb.jpg'
+import LivingRoomThumb from '../images/livingrooms_thumb.jpg'
+import BasementThumb from '../images/basements_thumb.jpg'
+import BathroomsThumb from '../images/bathrooms_thumb.jpg'
 
 import AboutUs from './about-us.md'
 
@@ -28,15 +33,15 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="thumb-gallery columns is-multiline">
             <Link to={{ pathname: '/work/', query: { gallery: 'exterior' } }}><Thumb label='Exterior' img={ExteriorThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'woodwork' } }}><Thumb label='Custom Cabinetry & Woodwork' img={WoodworkThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'mudrooms' } }}><Thumb label='Mudrooms' img={MudroomThumb}></Thumb></Link>
             <Link to={{ pathname: '/work/', query: { gallery: 'porches' } }}><Thumb label='Porches' img={PorchesThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'kitchens' } }}><Thumb label='Kitchens' img={KitchensThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'garage' } }}><Thumb label='Garage / Shed' img={GarageThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'decks' } }}><Thumb label='Decks' img={PorchesThumb}></Thumb></Link>
             <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Living Rooms' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
-            <Link to={{ pathname: '/work/', query: { gallery: 'livingrooms' } }}><Thumb label='Another' img={LivingRoomThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'basements' } }}><Thumb label='Basements' img={BasementThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'bathrooms' } }}><Thumb label='Bathrooms' img={BathroomsThumb}></Thumb></Link>
+            <Link to={{ pathname: '/work/', query: { gallery: 'kitchens' } }}><Thumb label='Kitchens' img={KitchensThumb}></Thumb></Link>
           </div>
         </section>
 

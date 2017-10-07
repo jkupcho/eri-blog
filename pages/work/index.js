@@ -3,9 +3,15 @@ import Gallery from '../../components/Gallery'
 import Thumb from '../../components/Thumb'
 
 import ExteriorThumb from '../../images/exterior_thumb.jpg'
+import DecksThumb from '../../images/deck_thumb.jpg'
+import GarageThumb from '../../images/garage_thumb.jpg'
+import WoodworkThumb from '../../images/woodwork_thumb.jpg'
+import MudroomThumb from '../../images/mudroom_thumb.jpg'
 import PorchesThumb from '../../images/porches_thumb.jpg'
 import KitchensThumb from '../../images/kitchens_thumb.jpg'
-import LivingRoomThumb from '../../images/living_room_thumb.jpg'
+import LivingRoomThumb from '../../images/livingrooms_thumb.jpg'
+import BasementThumb from '../../images/basements_thumb.jpg'
+import BathroomsThumb from '../../images/bathrooms_thumb.jpg'
 
 import detail from './detail.json'
 
@@ -77,12 +83,24 @@ const Thumbs = ({onClick}) => {
     switch (detail.name) {
       case 'exterior':
         return ExteriorThumb
-      case 'porches':
+      case 'woodwork':
+        return WoodworkThumb
+      case 'mudrooms': 
+        return MudroomThumb
+      case 'porches': 
         return PorchesThumb
-      case 'kitchens':
-        return KitchensThumb
+      case 'garage': 
+        return GarageThumb
+      case 'decks':
+        return DecksThumb
       case 'livingrooms':
         return LivingRoomThumb
+      case 'basements':
+        return BasementThumb
+      case 'bathrooms':
+        return BathroomsThumb
+      case 'kitchens':
+        return KitchensThumb
       default:
         return ''
     }

@@ -5,19 +5,49 @@
     "albumId": "72157682437069284"
   },
   {
+    "name": "woodwork",
+    "label": "Custom Cabinetry & Woodwork",
+    "albumId": "72157683326210760"
+  },
+  {
+    "name": "mudrooms",
+    "label": "Mudrooms",
+    "albumId": "72157683326007650"
+  },
+  {
     "name": "porches",
     "label": "Porches",
     "albumId": "72157682436627004"
   },
   {
-    "name": "kitchens",
-    "label": "Kitchens",
-    "albumId": "72157682318556182"
+    "name": "garage",
+    "label": "Garage / Shed",
+    "albumId": "72157682435776424"
+  },
+  {
+    "name": "decks",
+    "label": "Decks",
+    "albumId": "72157682435697104"
   },
   {
     "name": "livingrooms",
     "label": "Living Rooms",
     "albumId": "72157682321554212"
+  },
+  {
+    "name": "basements",
+    "label": "Basements",
+    "albumId": "72157685285691136"
+  },
+  {
+    "name": "bathrooms",
+    "label": "Bathrooms",
+    "albumId": "72157682321345432"
+  },
+  {
+    "name": "kitchens",
+    "label": "Kitchens",
+    "albumId": "72157682318556182"
   }
 
 ]
