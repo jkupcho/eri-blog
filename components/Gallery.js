@@ -3,7 +3,7 @@ import { fetchAlbum } from '../lib/flickr-api';
 
 import Slider from 'react-slick';
 
-import './Gallery.css';
+import './Gallery.scss';
 
 const settings = {
   dots: true,
