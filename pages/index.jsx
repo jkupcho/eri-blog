@@ -22,7 +22,7 @@ import Icon from '../components/Icon'
 import Thumb from '../components/Thumb'
 import Banner from '../images/banner.jpg'
 import AboutUsImage from '../images/dusolds-540x460.jpg'
-import '../css/index.css'
+import '../css/index.scss'
 
 export default class Index extends React.Component {
   render() {

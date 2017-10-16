@@ -11,23 +11,23 @@
   }
 
   @media only screen and (min-width: 375px) {
-    padding-top: 2.5px;
-    height: 225px;
+    padding-top: 5px;
+    height: 300px;
   }
 
   @media only screen and (min-width: 667px) {
-    height: 295px;
+    height: 325px;
   }
 
   @media only screen and (min-width: 768px) {
-    padding-top: 10px;
-    height: 525px;
+    padding-top: 20px;
+    height: 600px;
   }
 
   @media only screen and (min-width: 1024px) {
-    height: 670px;
+    padding-top: 10px;
+    height: 680px;
   }
-
 
 }
 
@@ -55,7 +55,7 @@
 
 ul.slick-dots {
   position: relative;
-  top: -95px;
+  top: 1px;
 }
 
 
@@ -74,15 +74,15 @@ ul.slick-dots > li {
   }
 
   @media only screen and (min-width: 667px) {
-    max-width: 475px;
+    max-width: 380px;
   }
 
   @media only screen and (min-width: 768px) {
-    max-width: 525px;
+    max-width: 730px;
   }
 
   @media only screen and (min-width: 1024px) {
-    max-width: 960px;
+    max-width: 850px;
   }
 
 }
@@ -93,6 +93,3 @@ ul.slick-dots > li {
   right: -50%;
 }
 
-.img-container > .image > img {
-  top: -100px;
-}
