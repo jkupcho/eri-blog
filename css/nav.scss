@@ -47,7 +47,9 @@
   top: 15.5px;
   max-height: 5.5rem !important;
 
-  @media (max-width: 375px) {
+  @media(max-width: 1007px)  {
+    max-height: 4.5rem !important;
+    top: -7px;
   }
 
   @media (max-width: 768px) {
@@ -55,9 +57,8 @@
     top: -4px;
   }
 
-  @media(max-width: 1007px)  {
-    max-height: 4.5rem !important;
-    top: -7px;
+  @media (max-width: 375px) {
+    top: 9px;
   }
 }
 
