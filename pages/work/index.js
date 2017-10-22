@@ -81,7 +81,6 @@ export default class Work extends React.Component {
 const Description = ({name}) => {
 
   const thumb = (name) => {
-    console.log(name);
     switch (name) {
       case 'exterior':
         return ExteriorMd
