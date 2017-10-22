@@ -13,6 +13,17 @@ import LivingRoomThumb from '../../images/livingrooms_thumb.jpg'
 import BasementThumb from '../../images/basements_thumb.jpg'
 import BathroomsThumb from '../../images/bathrooms_thumb.jpg'
 
+import ExteriorMd from './Exterior.md'
+import WoodworkMd from './Woodwork.md'
+import MudroomMd from './Mudroom.md'
+import PorchesMd from './Porches.md'
+import GarageMd from './Garage.md'
+import DecksMd from './Decks.md'
+import LivingRoomMd from './LivingRoom.md'
+import BasementMd from './Basement.md'
+import BathroomsMd from './Bathrooms.md'
+import KitchensMd from './Kitchens.md'
+
 import detail from './detail.json'
 
 import Scroll, { Link, Element, animateScroll } from 'react-scroll' 
@@ -54,12 +65,7 @@ export default class Work extends React.Component {
         <section className="section">
           <div className="content">
             <h2>{this.state.galleryShown.label}</h2>
-            <p>
-              Ipsum molestias maxime dolores molestiae necessitatibus magnam impedit. Dolorem vel recusandae ea id cupiditate expedita, earum? Lorem maiores enim ad eveniet suscipit? Maiores expedita quaerat aliquam labore necessitatibus id, numquam
-            </p>
-            <p>
-            Sit quod accusamus rerum cumque quidem quibusdam? Molestias odio veritatis autem consectetur esse? Doloremque aut elit adipisci labore illo Eaque totam voluptatibus itaque quis mollitia. Dolore esse voluptatem maiores veniam
-            </p>
+            <Description name={this.state.galleryShown.name} />
           </div>
         </section>
         <section className="section">
@@ -70,6 +76,41 @@ export default class Work extends React.Component {
     )
   }
 
+}
+
+const Description = ({name}) => {
+
+  const thumb = (name) => {
+    console.log(name);
+    switch (name) {
+      case 'exterior':
+        return ExteriorMd
+      case 'woodwork':
+        return WoodworkMd
+      case 'mudrooms': 
+        return MudroomMd
+      case 'porches': 
+        return PorchesMd
+      case 'garage': 
+        return GarageMd
+      case 'decks':
+        return DecksMd
+      case 'livingrooms':
+        return LivingRoomMd
+      case 'basements':
+        return BasementMd
+      case 'bathrooms':
+        return BathroomsMd
+      case 'kitchens':
+        return KitchensMd
+      default:
+        return ''
+    }
+  }
+
+  return (
+    <div className="content" dangerouslySetInnerHTML={{ __html: thumb(name).body }}></div>
+  )
 }
 
 const Thumbs = ({onClick}) => { 
