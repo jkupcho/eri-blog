@@ -69,18 +69,22 @@ ul.slick-dots > li {
 
   @media only screen and (min-width: 375px) {
     max-width: 350px;
+    max-height: 263px;
   }
 
   @media only screen and (min-width: 667px) {
     max-width: 380px;
+    max-height: 265px;
   }
 
   @media only screen and (min-width: 768px) {
     max-width: 730px;
+    max-height: 535px;
   }
 
   @media only screen and (min-width: 1024px) {
     max-width: 850px;
+    max-height: 625px;
   }
 
 }
