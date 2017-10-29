@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { prefixLink } from 'gatsby-helpers'
 import { TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
+import objectFitImages from 'object-fit-images'
 
 const BUILD_TIME = new Date().getTime()
 
