@@ -53,40 +53,37 @@
   right: 35px;
 }
 
-ul.slick-dots {
-  position: relative;
-  top: 1px;
-}
-
 ul.slick-dots > li {
   @media (max-width: 375px) {
     margin: 0 2.5px;
   }
 }
 
-.img-container {
-  margin: 0 auto;
-
+.img-contain {
+  object-fit: contain;
   @media only screen and (min-width: 375px) {
-    max-width: 350px;
-    max-height: 263px;
+    width: 350px;
+    height: 275px;
   }
 
   @media only screen and (min-width: 667px) {
-    max-width: 380px;
-    max-height: 265px;
+    width: 380px;
   }
 
   @media only screen and (min-width: 768px) {
-    max-width: 730px;
-    max-height: 535px;
+    width: 730px;
+    height: 550px;
   }
 
   @media only screen and (min-width: 1024px) {
-    max-width: 850px;
-    max-height: 625px;
+    width: 850px;
+    height: 630px;
   }
+}
 
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
 }
 
 .img-wrapper {
