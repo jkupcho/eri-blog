@@ -16,6 +16,7 @@ export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.any
   }
+
   render() {
 
     return (

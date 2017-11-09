@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { prefixLink } from 'gatsby-helpers'
 import { TypographyStyle } from 'react-typography'
 import typography from './utils/typography'
-import objectFitImages from 'object-fit-images'
 
 const BUILD_TIME = new Date().getTime()
 
@@ -48,6 +47,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
           <script>
             objectFitImages()
           </script>
