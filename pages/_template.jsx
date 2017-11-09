@@ -12,9 +12,15 @@ import Footer from '../components/Footer'
 import 'font-awesome/css/font-awesome.css'
 import '../css/site.scss'
 
+import objectFitImages from 'object-fit-images'
+
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.any
+  }
+
+  componentDidMount() {
+    objectFitImages()
   }
 
   render() {
