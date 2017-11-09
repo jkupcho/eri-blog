@@ -49,7 +49,7 @@ export default class HTML extends React.Component {
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.min.js"></script>
           <script>
-            objectFitImages(null, { watchMQ: true });
+            objectFitImages();
           </script>
         </body>
       </html>
