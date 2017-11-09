@@ -28,7 +28,7 @@ export default class Index extends React.Component {
   render() {
     return (
       <div className="container">
-        <Gallery albumId='72157682345181862'/>
+        <Gallery albumId='72157690100344776'/>
       
         <section className="section">
           <div className="thumb-gallery columns is-multiline">
