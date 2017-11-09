@@ -48,6 +48,9 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          <script>
+            objectFitImages()
+          </script>
         </body>
       </html>
     )
