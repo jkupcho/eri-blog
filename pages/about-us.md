@@ -1,5 +1,3 @@
-TEST
-
 Enhanced Interiors Remodeling is a family owned, Father and Son company. Established in 1989 by Bill Dusold, Enhanced Interiors Remodeling was started with the intention of remodeling only the interiors of the homes. As time progressed, the natural evolution was to provide complete home remodeling services while maintaining its original name.
 
 While enjoying a successful engineering career, Bill started Enhanced Interiors Remodeling business. Lacking tangible evidence of improvements while in industry, Bill was spurred by the constant and unlimited change in the remodeling process. As Bill has always stated, "At the end of a day, there will be change."
