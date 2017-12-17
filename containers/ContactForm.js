@@ -39,9 +39,10 @@ export default class ContactForm extends Component {
           method="post"
           action="/thanks/" 
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          data-netlify-honeypot="eri-bot-field"
         >
             <input type="hidden" name="form-name" name="contact" />
+            <input type="hidden" name="eri-bot-field" />
 
             <div className="field is-horizontal">
               <div className="field-label is-normal">
